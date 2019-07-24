@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/130d7a013f.js"></script>
+    <link rel="stylesheet" href="build/css/style.css">
+    <title>testForQM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="wrapper">
+            <h1>Project</h1>
+            <!-- Таблица с проектами -->
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chekedAll">
+                            <label for="chekedAll"></label>
+                        </td>
+                        <td>#</td>
+                        <td>CLIENT</td>
+                        <td>STATUS</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chekedFirst" checked>
+                            <label for="chekedFirst"></label>
+                        </td>
+                        <td>PROJECT #1723</td>
+                        <td>Stella</td>
+                        <td>
+                            <select name="status">
+                                <option value="1">Sent</option>
+                                <option value="2">Draft</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chekedSecond">
+                            <label for="chekedSecond"></label>
+                        </td>
+                        <td>PROJECT #1720</td>
+                        <td>IT corp international</td>
+                        <td>
+                            <select name="status">
+                                <option value="1">Sent</option>
+                                <option value="2">Draft</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </nav>
+    </header>
+    <section class="wrapper">
+        <!-- Блоки с проектами -->
+        <article>
+            <h2>Project #1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+        <article>
+            <h2>Project #2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+        <article>
+            <h2>Project #3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+        <article>
+            <h2>Project #4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+    </section>
+    <footer class="wrapper">
+        <!-- Форма -->
+        <form action="#">
+            <p>Add project</p>
+            <div class="formGroup">
+                <label >Name <span>*</span></label>
+                <input type="text" >
+            </div>
+
+            <div class="formGroup">
+                <label>Clien <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formGroup">
+                <label>E-mail <span>*</span></label>
+                <input type="text">
+            </div>
+            <div class="formGroup">
+                <label>Admin <span>*</span></label>
+                <select>
+                    <option>Admin</option>
+                    <option>User</option>
+                </select>
+            </div><br>
+            <input type="button" value="CANCEL">
+            <input type="submit" value="ADD">
+
+        </form>
+    </footer>
+
+
+    <script src="build/js/script.js"></script>
+</body>
+
+</html>
